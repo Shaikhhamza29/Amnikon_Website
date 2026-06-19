@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AMNIKON Support — submit a ticket, access self-service resources, or reach our helpdesk team 24/7.">
+  <title>Support — AMNIKON</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/navbar.css">
+  <link rel="stylesheet" href="../../assets/css/footer.css">
+  <link rel="stylesheet" href="../../assets/css/chatbot.css">
+  <link rel="stylesheet" href="support.css">
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+  <script src="../../components/navbar.js"></script>
+
+  <section class="page-hero page-hero-sm">
+    <div class="container">
+      <div class="eyebrow">Help Center</div>
+      <h1>How Can We <span class="highlight">Help You?</span></h1>
+      <p>Submit a ticket, chat with us, or browse our self-service resources. We're here 24/7.</p>
+    </div>
+  </section>
+
+  <!-- ── SUPPORT OPTIONS ── -->
+  <section class="section" id="options">
+    <div class="container">
+      <div class="support-options reveal-stagger">
+        <a href="mailto:support@amnikon.com" class="support-option-card">
+          <div class="support-option-icon">✉️</div>
+          <h4>Email Support</h4>
+          <p>Send us a detailed email and we'll respond promptly.</p>
+          <span class="support-option-link">support@amnikon.com →</span>
+        </a>
+        <a href="tel:+18886758060" class="support-option-card">
+          <div class="support-option-icon">📞</div>
+          <h4>Call the Helpdesk</h4>
+          <p>Reach a live technician any time, 24/7.</p>
+          <span class="support-option-link">+1 888 675 8060 →</span>
+        </a>
+        <a href="https://calendly.com/mfayaz-nhktechnologies/30min?month=2026-06" target="_blank" rel="noopener" class="support-option-card">
+          <div class="support-option-icon">📅</div>
+          <h4>Schedule a Session</h4>
+          <p>Book a screen-share session with a senior technician.</p>
+          <span class="support-option-link">Book Now →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TICKET FORM ── -->
+  <section class="section ticket-section" id="ticket">
+    <div class="container">
+      <div class="ticket-layout">
+
+        <div class="ticket-form-wrap reveal-left">
+          <div class="eyebrow">Submit a Ticket</div>
+          <h2>Describe Your Issue</h2>
+          <p>Our team will review your ticket and respond within 2 hours during business hours.</p>
+
+          <form class="ticket-form" id="ticketForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ticketName">Your Name *</label>
+                <input class="form-control" type="text" id="ticketName" placeholder="John Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="ticketEmail">Email *</label>
+                <input class="form-control" type="email" id="ticketEmail" placeholder="john@company.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="priority">Priority</label>
+                <select class="form-control" id="priority">
+                  <option>Low — General inquiry</option>
+                  <option>Medium — Service degraded</option>
+                  <option selected>High — Business impacted</option>
+                  <option>Critical — Systems down</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="category">
+                  <option>Network / Connectivity</option>
+                  <option>Hardware</option>
+                  <option>Software / Applications</option>
+                  <option>Security Incident</option>
+                  <option>Cloud Services</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input class="form-control" type="text" id="subject" placeholder="Brief description of the issue" required>
+            </div>
+            <div class="form-group">
+              <label for="ticketMessage">Describe the Issue *</label>
+              <textarea class="form-control" id="ticketMessage" placeholder="Please include when the issue started, steps to reproduce, and any error messages…" required style="min-height:160px;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="ticketSubmitBtn">
+              Submit Ticket →
+            </button>
+            <div class="form-success" id="ticketSuccess">
+              ✅ Ticket submitted! You'll receive a confirmation email shortly.
+            </div>
+          </form>
+        </div>
+
+        <div class="ticket-info reveal-right">
+          <div class="sla-card">
+            <h4>Response Times</h4>
+            <div class="sla-item">
+              <span class="sla-badge critical">Critical</span>
+              <span>30 minutes</span>
+            </div>
+            <div class="sla-item">
+              <span class="sla-badge high">High</span>
+              <span>2 hours</span>
+            </div>
+            <div class="sla-item">
+              <span class="sla-badge medium">Medium</span>
+              <span>4 hours</span>
+            </div>
+            <div class="sla-item">
+              <span class="sla-badge low">Low</span>
+              <span>1 business day</span>
+            </div>
+          </div>
+
+          <div class="self-service-card">
+            <h4>Self-Service Resources</h4>
+            <a href="#" class="quick-link"><span>📖</span><span>Knowledge Base</span></a>
+            <a href="#" class="quick-link"><span>🔐</span><span>Password Reset Guide</span></a>
+            <a href="#" class="quick-link"><span>📡</span><span>Network Status Page</span></a>
+            <a href="#" class="quick-link"><span>🔄</span><span>System Updates</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="../../components/footer.js"></script>
+  <div id="chatbot-placeholder"></div>
+  <script src="../../components/chatbot.js"></script>
+  <script src="../../assets/js/global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="support.js"></script>
+</body>
+</html>

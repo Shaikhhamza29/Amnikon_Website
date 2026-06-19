@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore AMNIKON's portfolio of successful IT projects and case studies.">
+  <title>Projects — AMNIKON</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/navbar.css">
+  <link rel="stylesheet" href="../../assets/css/footer.css">
+  <link rel="stylesheet" href="../../assets/css/chatbot.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+  <!-- Navbar (injected) -->
+  <div id="navbar-placeholder"></div>
+  <script src="../../components/navbar.js"></script>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Our Work</div>
+      <h1>Empowering Businesses with <span class="highlight">Innovative IT Projects</span></h1>
+      <p>Discover how AMNIKON transforms ideas into real‑world solutions that drive growth, security, and efficiency.</p>
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+    </div>
+  </section>
+
+  <!-- =========================
+     PROJECTS
+========================== -->
+<!-- ==========================================
+    PROJECTS SECTION
+========================================== -->
+
+<section class="projects-section" id="projects">
+
+    <div class="container">
+
+        <div class="section-header centered">
+            <div class="eyebrow">Case Studies</div>
+
+            <h2>Featured Projects</h2>
+
+            <p>
+                Discover our enterprise solutions designed for modern businesses.
+            </p>
+        </div>
+
+        <div class="project-row">
+
+            <button class="slider-btn left">&#10094;</button>
+
+            <div class="project-slider">
+
+                <!-- ================= CARD 1 ================= -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="../../assets/images/projects/project1.png" alt="Enterprise HRMS">
+
+                        <div class="overlay">
+
+                            <button
+                                class="play-btn"
+
+                                data-title="Enterprise HRMS"
+
+                                data-image="../../assets/images/projects/project1.png"
+
+                                data-description="A secure Human Resource Management System built with React, .NET Microservices, Docker and MySQL."
+
+                                data-technologies="React,.NET,Docker,MySQL,JWT"
+
+                                data-demo="#"
+
+                                data-github="#">
+
+                                Explore →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Enterprise HRMS</h3>
+
+                        <p>React • .NET • Docker • MySQL</p>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= CARD 2 ================= -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="../../assets/images/projects/project2.png" alt="Hospital Management">
+
+                        <div class="overlay">
+
+                            <button
+                                class="play-btn"
+
+                                data-title="Hospital Management"
+
+                                data-image="../../assets/images/projects/project2.png"
+
+                                data-description="Complete Hospital ERP with appointments, billing, pharmacy and patient management."
+
+                                data-technologies="React,.NET,SQL Server,Docker"
+
+                                data-demo="#"
+
+                                data-github="#">
+
+                                Explore →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Hospital Management</h3>
+
+                        <p>Cloud ERP Platform</p>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= CARD 3 ================= -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="../../assets/images/projects/project3.png" alt="E-Commerce Platform">
+
+                        <div class="overlay">
+
+                            <button
+                                class="play-btn"
+
+                                data-title="E-Commerce Platform"
+
+                                data-image="../../assets/images/projects/project3.png"
+
+                                data-description="Modern online shopping platform with payment gateway and inventory management."
+
+                                data-technologies="React,ASP.NET Core,Stripe,MySQL"
+
+                                data-demo="#"
+
+                                data-github="#">
+
+                                Explore →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>E-Commerce Platform</h3>
+
+                        <p>React • ASP.NET Core</p>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= CARD 4 ================= -->
+
+                <div class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="../../assets/images/projects/project4.png" alt="Cloud Migration">
+
+                        <div class="overlay">
+
+                            <button
+                                class="play-btn"
+
+                                data-title="Cloud Migration"
+
+                                data-image="../../assets/images/projects/project4.png"
+
+                                data-description="Migration of enterprise infrastructure to Microsoft Azure with zero downtime."
+
+                                data-technologies="Azure,Docker,Kubernetes,Terraform"
+
+                                data-demo="#"
+
+                                data-github="#">
+
+                                Explore →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Cloud Migration</h3>
+
+                        <p>Azure Infrastructure</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="slider-btn right">&#10095;</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+      PROJECT DETAILS MODAL
+========================================== -->
+
+<div class="project-modal">
+
+    <div class="modal-content">
+
+        <button class="close-modal">&times;</button>
+
+        <img id="modal-image" src="" alt="Project">
+
+        <div class="modal-body">
+
+            <h2 id="modal-title"></h2>
+
+            <p id="modal-description"></p>
+
+            <div id="modal-tech" class="modal-tech"></div>
+
+            <div class="modal-actions">
+
+                <a id="demo-link" href="#" target="_blank" class="btn btn-primary">
+                    Live Demo
+                </a>
+
+                <a id="github-link" href="#" target="_blank" class="btn btn-outline">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+  <!-- Footer (injected) -->
+  <div id="footer-placeholder"></div>
+  <script src="../../components/footer.js"></script>
+
+  <!-- Chatbot (injected) -->
+  <div id="chatbot-placeholder"></div>
+  <script src="../../components/chatbot.js"></script>
+
+  <!-- Global Scripts -->
+  <script src="../../assets/js/global.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
